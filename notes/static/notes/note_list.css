@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap");
+
+h1 {
+  color: red;
+}
+
+p {
+  color: blueviolet;
+}
+
+.note--container {
+  border-radius: 5px;
+  box-shadow: 25px 25px 50px #a3a3a3, -25px -25px 50px #ffffff;
+  padding: 20px;
+  margin: 5rem 0;
+  transition: all 0.7s;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+.note--container:hover {
+  box-shadow: 12px 12px 24px #a3a3a3, -12px -12px 24px #ffffff;
+}
+
+.note--title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+.note--text {
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem;
+}

@@ -4,7 +4,7 @@
 {% block title %}Notes List{% endblock title %}
 
 {% block extra_css %}
-<link rel='stylesheet' href='{% static 'notes/notelist.css' %}'/>
+<link rel='stylesheet' href='{% static 'notes/note_list.css' %}'/>
 {% endblock extra_css %}
 
 {% block content %}
@@ -12,26 +12,14 @@
 
 <div class="note_list--container">
     {% for note in notes %}
-    <div>
-        <h5>{{ note.title }}</h5>
-        <p>{{ note.text }}</p>
+    <div class="note--container">
+        <h5 class="note--title">{{ note.title }}</h5>
+        <p class="note--text">{{ note.text }}</p>
     </div>
     {% endfor %}
     <div>
         <h5> Note title</h5>
         <p>There will be note text here bro. There will be note text here bro. There will be note text here bro. </p>
     </div>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
 {% endblock content %}
