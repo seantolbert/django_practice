@@ -1,7 +1,32 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block title %}Notes List{% endblock title %}
-{% block extra_css %}{% endblock extra_css %}
+
+{% block extra_css %}
+<link rel='stylesheet' href='{% static 'notes/notelist.css' %}'/>
+{% endblock extra_css %}
 
 {% block content %}
 <h1>YOYO we did it</h1>
+
+<div class="note_list--container">
+
+    <div>
+        <h5> Note title</h5>
+        <p>There will be note text here bro. There will be note text here bro. There will be note text here bro. </p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 {% endblock content %}
